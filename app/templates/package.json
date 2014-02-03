@@ -1,0 +1,15 @@
+{
+  "name": "nwfront-end",
+  "version": "0.0.0",
+  "description": "",
+  "devDependencies": {
+    "grunt-open": "~0.2.2",
+    "load-grunt-tasks": "~0.2.1",<% if (includeModernizr) { %>
+    "grunt-modernizr": "~0.4.0",<% } %>
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",<% if (includeLess) { %>
+    "grunt-contrib-less":  "~0.8.3",<% } %>
+    "grunt-express": "~1.2.1"
+  }
+}
