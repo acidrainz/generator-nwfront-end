@@ -27,6 +27,16 @@ module.exports = function (grunt) {
                 }]
             }
       },
+     imagemin: {
+          dist: {
+              files: [{
+                  expand: true,
+                  cwd: '<%%= yeoman.app %>/images',
+                  src: '{,*/}*.{gif,jpeg,jpg,png}',
+                  dest: '<%%= yeoman.app %>/optimized/images'
+              }]
+          }
+      },
 
      copy: {
             dist: {
@@ -89,10 +99,11 @@ module.exports = function (grunt) {
   });
 
   // Creates the `server` task
-  grunt.registerTask('server', [
+  grunt.registerTask('serve', [
     'less',
     'express',
     'open',
+    'imagemin',
     'watch'
   ]);
  grunt.registerTask('build', [
