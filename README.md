@@ -8,8 +8,9 @@ and livereload to directly see the modifications in your browser when you save.
 It also initialises a Git repository, so you can version your experiments.
 
 Nice to have features that might land in the future:
- - allow for different features of HTML (HAML, Jade...), CSS (LESS, SASS...), JS (Coffeescript, Typescript...)
- - add CSS and JS linting with desktop notifications.
+ - add Normalize and Modernizr
+ - add CSS or LESS.
+ - add Bootstrap .
 
 
 ## Getting Started
