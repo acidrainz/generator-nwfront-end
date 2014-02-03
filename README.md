@@ -9,7 +9,7 @@ It also initialises a Git repository, so you can version your experiments.
 
 Nice to have features that might land in the future:
  - add Normalize and Modernizr
- - add CSS or LESS.
+ - add LESS.
  - add Bootstrap .
 
 
