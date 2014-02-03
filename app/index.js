@@ -63,7 +63,6 @@ nwFrontEndGenerator.prototype.promptForConfiguration = function promptForConfigu
 };
 
 nwFrontEndGenerator.prototype.createProjectFiles = function createProjectFiles() {
-
   this.mkdir('app');
   // css
   this.mkdir('app/css');
@@ -73,8 +72,8 @@ nwFrontEndGenerator.prototype.createProjectFiles = function createProjectFiles()
   this.mkdir('app/images');
   //fonts
   this.mkdir('app/fonts');
-
   this.copy('index.html', 'app/index.html');
+  this.copy('css/fonts.css', 'app/css/fonts.css');
   this.copy('js/app.js','app/js/app.js');
   if(this.includeLess){
      this.copy('css/style.less','app/css/style.less');
@@ -93,20 +92,16 @@ nwFrontEndGenerator.prototype.createProjectFiles = function createProjectFiles()
      this.copy('vendor/bootstrap/js/bootstrap.min.js','app/js/bootstrap.min.js');
      this.directory('vendor/bootstrap/fonts','app/fonts');
   }
-
 if(this.includeModernizr){
      this.copy('vendor/modernizr/modernizr.js','app/js/modernizr.js');
 }
-
-
-
-  this.copy('Gruntfile.js');
-  this.copy('package.json');
-  this.copy('bower.json');
-  this.copy('bowerrc', '.bowerrc');
-  this.copy('editorconfig', '.editorconfig');
-  this.copy('gitignore', '.gitignore');
-  this.copy('gitattributes', '.gitattributes');
+this.copy('Gruntfile.js');
+this.copy('package.json');
+this.copy('bower.json');
+this.copy('bowerrc', '.bowerrc');
+this.copy('editorconfig', '.editorconfig');
+this.copy('gitignore', '.gitignore');
+this.copy('gitattributes', '.gitattributes');
 
 
 };
