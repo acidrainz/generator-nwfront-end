@@ -5,17 +5,17 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/rhumaric/generator-playground",
-  "bugs": "https://github.com/rhumaric/generator-playground/issues",
+  "homepage": "http://gitlab.nuworks.dev/ian.pansensoy/generator-nwfront-end.git",
+  "bugs": "http://gitlab.nuworks.dev/ian.pansensoy/generator-nwfront-end.git/issues",
   "author": {
-    "name": "Romaric Pascal",
+    "name": "Nuworks Interactive Inc.",
     "email": "",
-    "url": "https://github.com/rhumaric"
+    "url": "http://gitlab.nuworks.dev/ian.pansensoy"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rhumaric/generator-playground.git"
+    "url": "gitlab@gitlab.nuworks.dev:ian.pansensoy/generator-nwfront-end.git"
   },
   "scripts": {
     "test": "mocha"
