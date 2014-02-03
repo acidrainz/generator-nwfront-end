@@ -19,6 +19,8 @@ util.inherits(nwFrontEndGenerator, yeoman.generators.Base);
 nwFrontEndGenerator.prototype.promptForConfiguration = function promptForConfiguration() {
 
   var done = this.async();
+  // have Yeoman greet the user.
+  console.log(this.yeoman);
 
   var prompts = [{
     type: 'confirm',
