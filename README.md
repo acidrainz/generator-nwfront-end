@@ -32,7 +32,7 @@ $ yo nwfront-end
 
 The generator will work its magic and scaffold the necessary files and folders. You're ready to go!
 
-Start the express and livereload servers using `grunt server`.
+Start the express and livereload servers using `grunt serve`.
 This will also open your default browser to see index.html.
 All that's left is popping up your favourite text editor and edit the `index.html`, `css/style.css` and/or `js/app.js`.
 
