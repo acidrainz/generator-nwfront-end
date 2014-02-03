@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
 <head>
-  <title>Nuworks Interactive Inc.</title><% if (includeNormalize || !includeBootstrap) { %>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css"><% } %>
-  <link rel="stylesheet" type="text/css" href="css/dist/style.css"><% if(includeBootstrap) { %>
+  <title>Nuworks Interactive Inc.</title><% if( !includeBootstrap && includeNormalize){ %>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"><% } %><% if(includeBootstrap) { %>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><% } %>
   <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/dist/style.css">
 </head>
 <body>
      <div class="main-wrapper">
