@@ -40,7 +40,7 @@ You could even go with a crazy one liner to do all of this at once
 (might want to alias this if you plan on using it often):
 
 ```
-$ yo nwfront-end && (sublime-text . index.html css/style.css js/app.js &) && grunt server
+$ yo nwfront-end && (sublime-text . index.html css/style.css js/app.js &) && grunt serve
 ```
 > Note: Replace the `sublime-text` command with the one corresponding to your editor,
 > maybe the one stored in the $EDITOR environment variable.
