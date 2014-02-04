@@ -98,7 +98,9 @@ module.exports = function (grunt) {
     }
   })
 
-  grunt.registerTask('serve', ['less','express', 'open', 'imagemin', 'watch']);
+var tasks = ['express', 'open', 'imagemin', 'watch'];
+if (grunt.option('compile')) tasks.unshift('less')
+grunt.registerTask('serve', tasks);
 
 
 

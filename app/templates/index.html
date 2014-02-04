@@ -4,8 +4,9 @@
   <title>Nuworks Interactive Inc.</title><% if( !includeBootstrap && includeNormalize){ %>
   <link rel="stylesheet" type="text/css" href="css/normalize.css"><% } %><% if(includeBootstrap) { %>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><% } %>
-  <link rel="stylesheet" type="text/css" href="css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="css/dist/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css"><% if( includeLess){ %>
+  <link rel="stylesheet" type="text/css" href="css/dist/style.css"><% }else{ %>
+  <link rel="stylesheet" type="text/css" href="css/style.css"> <% } %>
 </head>
 <body>
      <div class="main-wrapper">
