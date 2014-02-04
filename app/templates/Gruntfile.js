@@ -31,6 +31,7 @@ module.exports = function (grunt) {
           dist: {
               files: [{
                   expand: true,
+                   flatten: true,
                   cwd: 'app/images',
                   src: '{,*/}*.{gif,jpeg,jpg,png}',
                   dest: 'app/images/optimized'
