@@ -96,11 +96,9 @@ module.exports = function (grunt) {
         path: 'http://localhost:<%= express.all.options.port%>'
       }
     }
-  });
+  })
 
-  var tasks = ['express', 'open', 'imagemin', 'watch'];
-  if (includeLess) tasks.unshift('less'); // add less to the beginning of array
-  grunt.registerTask('serve', tasks);
+  grunt.registerTask('serve', ['less','express', 'open', 'imagemin', 'watch']);
 
 
 
