@@ -19,7 +19,7 @@ Yeoman runs using [node.js](http://nodejs.org), so you'll need it installed on y
 Installing the generator is a matter of a simple `npm` command.
 
 ```
-$ npm install -g generator-nwfront-end
+$ npm install git+http://gitlab.nuworks.dev/ian.pansensoy/generator-nwfront-end.git -g
 ```
 
 Yeoman, Grunt and Bower, which are needed for the generator to work fine should have been installed
