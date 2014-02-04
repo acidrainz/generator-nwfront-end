@@ -98,9 +98,17 @@ module.exports = function (grunt) {
     }
   });
 
-  var tasks = ['express', 'open', 'imagemin', 'watch'];
-  if (includeLess) tasks.unshift('less'); // add less to the beginning of array
-  grunt.registerTask('serve', tasks);
+  // Creates the `server` task
+  grunt.registerTask('serve', [
+    'less',
+    'express',
+    'open',
+    'imagemin',
+    'watch'
+  ]);
+ grunt.registerTask('build', [
+  'copy'
+]);
 
 
 
