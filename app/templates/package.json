@@ -7,7 +7,6 @@
     "load-grunt-tasks": "~0.2.1",<% if (includeModernizr) { %>
     "grunt-modernizr": "~0.4.0",<% } %>
     "grunt": "~0.4.2",
-    "grunt-php",
     "grunt-contrib-imagemin": "~0.2.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",<% if (includeLess) { %>
