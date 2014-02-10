@@ -1,4 +1,4 @@
-# generator-nwfront-end
+# generator-nwfrontend
 
 A generator for [Yeoman](http://yeoman.io) that scaffolds a simple web project for when you need to
 quickly play with an idea. It will create an HTML, CSS and Javascript file, already linked with each other,
